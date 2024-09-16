@@ -54,27 +54,34 @@ public class Main {
         // Задание 6
 
         int all = 102;
-        int sitting= 60; // сидячие
+        int sitting= 60;
         int standing = all - sitting;
-        System.out.println(standing);
 
-        int soldSitting = 49;
-        int soldStanding = 41;
+
+        int soldSitting = 53; //Калькулятор
+        int soldStanding = 41; //Калькулятор
+        int allSold = soldSitting + soldSitting;
+
+        if (all >= allSold)
+        {System.out.println("Мест нет");        }
+        else {System.out.println("Места есть");        }
 
         int sittingLeft = sitting - soldSitting;
+        if (sittingLeft <= 0)
+        {        System.out.println("Сидячих мест нет");}
+        else System.out.println("Сидячих мест " + sittingLeft);
+
+
         int standingLeft = standing - soldStanding;
-        int allLeft = sittingLeft + standingLeft;
-        System.out.println(sittingLeft);
-        System.out.println(standingLeft);
-        System.out.println(allLeft);
+        if (standingLeft <= 0)
+        {            System.out.println("Стоячих мест нет");        }
+        else System.out.println("Стоячих мест " + standingLeft);
 
-        if (allLeft > 0) {
-            System.out.println("В вагоне осталось " + allLeft + " мест. Сидячих " + sittingLeft + " Стоячих " + standingLeft);
 
-        } else {
-            System.out.println("В вагоне не осталось мест");
+        // Задание 6
 
-        }
+
+
 
 
     } }
