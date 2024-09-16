@@ -58,11 +58,11 @@ public class Main {
         int standing = all - sitting;
 
 
-        int soldSitting = 59; //Калькулятор
-        int soldStanding = 42; //Калькулятор
-        int allSold = soldSitting + soldStanding;
+        int soldSitting = 53; //Калькулятор
+        int soldStanding = 41; //Калькулятор
+        int allSold = soldSitting + soldSitting;
 
-        if (all <= allSold)
+        if (all >= allSold)
         {System.out.println("Мест нет");        }
         else {System.out.println("Места есть");        }
 
@@ -78,16 +78,9 @@ public class Main {
         else System.out.println("Стоячих мест " + standingLeft);
 
 
-        // Задание 7
-
-        int one = 1;
-        int two = 2;
-        int three = 3;
+        // Задание 6
 
 
-        if (two <= one && three <= two)
-        {System.out.println(one);}
-        else {System.out.println(three);}
 
 
 
